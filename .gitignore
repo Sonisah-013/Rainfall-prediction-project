@@ -1,0 +1,20 @@
+﻿# Virtual environment
+venv/
+.venv/
+
+# Secrets (API keys)
+.env
+
+# Python and Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large data and model files
+data/*.csv
+models/*.joblib
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+Thumbs.db
