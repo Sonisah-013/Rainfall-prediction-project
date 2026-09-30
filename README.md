@@ -184,28 +184,6 @@ rainfall-prediction/
 └── README.md
 ```
 
-## Getting started
-
-**1. Clone the repository**
-```powershell
-git clone https://github.com/Sonisah-013/rainfall-prediction.git
-cd rainfall-prediction
-```
-
-**2. Create a virtual environment and install the packages**
-```powershell
-python -m venv venv
-.\venv\Scripts\activate
-.\venv\Scripts\python.exe -m pip install -r requirements.txt
-```
-On macOS or Linux, use `source venv/bin/activate` and `pip install -r requirements.txt`.
-
-**3. Run the notebook**
-1. Open `notebooks/rainfall prediction.ipynb` in VS Code (or Jupyter).
-2. Select the `venv` Python as the kernel.
-3. Click **Restart**, then **Run All**. Random Forest takes a few minutes to train.
-
-Charts are saved to `images/` and the trained model to `models/`. The random seed is fixed (`42`), so results are reproducible.
 
 **requirements.txt**
 ```
@@ -240,20 +218,8 @@ They are missing in more than half of rows. Imputed values carry little real inf
 - Results depend on the time period used for testing.
 - Missing dates within a station are not filled, so lag features are approximate where records have gaps.
 
-## Roadmap
-- [ ] Add XGBoost or LightGBM to the comparison
-- [ ] Compare results with and without the high-missing columns
-- [ ] Retrain on Nepal weather data (for example from the [Open-Meteo](https://open-meteo.com) historical API, credited under CC BY 4.0) and compare with the Australian results
-- [ ] Build a Streamlit app that loads the saved model and shows a prediction
-- [ ] Add a live demo that feeds current weather into the model
-- [ ] Add a LICENSE file
 
-## Related research
-- Oswal, N. *Predicting Rainfall using Machine Learning Techniques.* arXiv:1910.13827. https://arxiv.org/abs/1910.13827
-- Sarasa-Cabezuelo, A. *Prediction of Rainfall in Australia Using Machine Learning.* Information, 2022. https://doi.org/10.3390/info13040163
-- Sharma, D., Shukla, A. K., Rattan, P. *Machine learning techniques for rainfall prediction: a systematic literature review.* IAES International Journal of Artificial Intelligence. https://ijai.iaescore.com/index.php/IJAI/article/view/27021
-- Poudyal, S., Katwal, S., Shakya, R. *Rainfall Prediction in Kathmandu City Using Machine Learning and Deep Learning Techniques.* https://www.nepjol.info/index.php/injetindev/article/view/95697
-- Cramer, S., Kampouridis, M., Freitas, A. A., Alexandridis, A. K. *An extensive evaluation of seven machine learning methods for rainfall prediction in weather derivatives.* Expert Systems with Applications, 2017. https://doi.org/10.1016/j.eswa.2017.05.029
+
 
 ## Acknowledgements
 - Dataset: Rain in Australia (weatherAUS), via Kaggle.
